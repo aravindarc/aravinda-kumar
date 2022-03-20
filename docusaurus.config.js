@@ -85,12 +85,17 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/aravindarc',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+              }
             ],
+          },
+          {
+            title: 'Other',
+            items: [
+              {
+                label: 'Website Code',
+                href: 'https://github.com/aravindarc/aravinda-kumar'
+              }
+            ]
           }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Aravinda Kumar. Built with Docusaurus.`,

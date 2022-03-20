@@ -23,3 +23,10 @@
   justify-content: center;
 }
 
+.scrollDown {
+  padding-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

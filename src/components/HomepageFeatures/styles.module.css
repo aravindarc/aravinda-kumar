@@ -1,3 +1,5 @@
+@import url("animate.css/animate.css") bounceIn;
+
 .features {
   display: flex;
   align-items: center;
@@ -5,7 +7,52 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureSvgContainerRight {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vh;
+  transform: translate(0%, 20%) perspective(100vh) rotate(3deg) rotateY(-20deg) rotateX(10deg);
+}
+
+.featureSvgContainerLeft {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vh;
+  transform: translate(-10%, 20%) perspective(100vh) rotate(-1deg) rotateY(20deg) rotateX(10deg);
+}
+
+.secondarySvgRight {
+  width: 70%;
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+  transform: translateX(-18%) translateY(-10%);
+  z-index: 2;
+}
+
+.secondarySvgLeft {
+  width: 70%;
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+  transform: translateX(18%) translateY(-10%);
+  z-index: 2;
+}
+
+.featureText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.featureRowHidden {
+  height: 80vh;
+  visibility: hidden;
+}
+
+.featureRow {
+  height: 80vh;
 }
