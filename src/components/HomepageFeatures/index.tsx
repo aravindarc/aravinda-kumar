@@ -79,6 +79,7 @@ const FeatureList: FeatureItem[] = [
         <FeatureTutorial href='/docs/intro' name='Terraform Tutorials'/>
       </>
     ),
+    imgPath: "/img/terraform_editor.svg"
   },
   {
     title: 'GCP Cloud',
