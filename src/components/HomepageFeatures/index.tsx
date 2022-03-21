@@ -6,13 +6,6 @@ import Anime, {anime} from 'react-animejs-wrapper'
 
 type GetFeaturesRef = () => React.MutableRefObject<any>;
 
-type FeatureItem = {
-  id?: number;
-  title: string;
-  description: JSX.Element;
-  getFeaturesRef?: GetFeaturesRef
-};
-
 type FeatureTutorialProps = {
   href: string;
   name: string;
@@ -27,11 +20,19 @@ function FeatureTutorial({href, name}: FeatureTutorialProps): JSX.Element {
         </a>
         &nbsp;
         &nbsp;
-        <img src={'/img/test.svg'} style={{width: '10px'}}/>
+        <img src={'/img/external.svg'} style={{width: '10px'}}/>
       </span>
     </div>
   )
 }
+
+type FeatureItem = {
+  id?: number;
+  title: string;
+  description: JSX.Element;
+  getFeaturesRef?: GetFeaturesRef;
+  imgPath?: string;
+};
 
 const FeatureList: FeatureItem[] = [
   {
@@ -51,6 +52,7 @@ const FeatureList: FeatureItem[] = [
         <FeatureTutorial href='/docs/intro' name='GoLang Tutorials'/>
       </>
     ),
+    imgPath: "/img/golang_editor.svg"
   },
   {
     title: 'ReactJS',
@@ -64,6 +66,7 @@ const FeatureList: FeatureItem[] = [
         <FeatureTutorial href='/docs/intro' name='React Tutorials'/>
       </>
     ),
+    imgPath: "/img/react_editor.svg"
   },
   {
     title: 'Terraform',
@@ -89,6 +92,7 @@ const FeatureList: FeatureItem[] = [
         <FeatureTutorial href='/docs/intro' name='GCP Tutorials'/>
       </>
     ),
+    imgPath: "/img/hp-primary-desktop_e0dab1f509.svg",
   },
   {
     title: 'Microsoft Azure Cloud',
@@ -106,6 +110,7 @@ const FeatureList: FeatureItem[] = [
         <FeatureTutorial href='/docs/intro' name='Azure Tutorials'/>
       </>
     ),
+    imgPath: "/img/hp-primary-desktop_e0dab1f509.svg",
   },
   {
     title: 'Java and Python',
@@ -117,6 +122,7 @@ const FeatureList: FeatureItem[] = [
         of the same using Stream APIs. Worked in modern frameworks like fastapi.
       </>
     ),
+    imgPath: "/img/hp-primary-desktop_e0dab1f509.svg",
   },
   {
     title: 'Hobbies in Embedded Computing',
@@ -128,10 +134,11 @@ const FeatureList: FeatureItem[] = [
         Built and deployed several IoS, Android and React Native applications acting as User Interfaces for the Automation Workloads.
       </>
     ),
+    imgPath: "/img/hp-primary-desktop_e0dab1f509.svg",
   },
 ];
 
-function Feature({id, title, description, getFeaturesRef}: FeatureItem) {
+function Feature({id, title, description, getFeaturesRef, imgPath}: FeatureItem) {
   var text: JSX.Element = (
     <div className={clsx('col col--6')}>
       <div className={styles.featureText} >
@@ -175,7 +182,7 @@ function Feature({id, title, description, getFeaturesRef}: FeatureItem) {
               delay: anime.stagger(150)
             }}
           >
-            <img className={id % 2 == 0 ? styles.secondarySvgRight : styles.secondarySvgLeft} src='/img/hp-primary-desktop_e0dab1f509.svg'/>
+            <img className={id % 2 == 0 ? styles.secondarySvgRight : styles.secondarySvgLeft} src={imgPath}/>
           </Anime>
         </div>
     </div>
