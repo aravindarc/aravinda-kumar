@@ -93,7 +93,7 @@ const FeatureList: FeatureItem[] = [
         <FeatureTutorial href='/docs/intro' name='GCP Tutorials'/>
       </>
     ),
-    imgPath: "/img/hp-primary-desktop_e0dab1f509.svg",
+    imgPath: "/img/gcp_editor.svg",
   },
   {
     title: 'Microsoft Azure Cloud',
