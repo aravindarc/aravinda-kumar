@@ -269,6 +269,6 @@ But we will have to wait and see how standards and behaviours emerge in the comm
 
 ## Why did golang choose Square Brackets for generics though?😓
 
-Java uses <> angle brackets for generics, golang could have followed the same, this whole thing with square brackets 
+Java uses `< >` angle brackets for generics, golang could have followed the same, this whole thing with square brackets 
 might make the general appearance of the go program a little confusing and alien looking considering arrays also use 
 Square Brackets.
