@@ -10,7 +10,7 @@ like this in <= 1.17
 
 ## Set of String
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -71,7 +71,7 @@ func (s *StringSet) Values() []string {
 
 ## Set of int
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -135,7 +135,7 @@ forced to write duplicate code one for int and one for string.
 
 # After Generics
 
-```golang
+```go
 package main
 
 import (
@@ -216,7 +216,7 @@ implements the interface `fmt.Stringer`.
 
 A struct with a generic type can be declared as follows:
 
-```golang
+```go
 type TestStruct[E any] struct {
     Ele E
 }
@@ -228,7 +228,7 @@ type or interface.
 
 If you want to restrict to generic constraint to two types you can use a pipe `|` and add two or more types as constraints, like this
 
-```golang
+```go
 type TestStruct[E int | int64] struct {
     Ele E
 }
@@ -238,7 +238,7 @@ type TestStruct[E int | int64] struct {
 
 A function with a generic type can be declared as follows:
 
-```golang
+```go
 func Test[E any](ele E) {
 
 }
@@ -250,7 +250,7 @@ Add a square bracket pair after your function name and before the function param
 
 For you to add a generic to a receiver method, the struct should first implement the generic. Like this
 
-```golang
+```go
 type TestStruct[E int | int64] struct {
     Ele E
 }
@@ -267,7 +267,7 @@ better libraries and packages, ORMs, etc...
 
 But we will have to wait and see how standards and behaviours emerge in the community arund generics.
 
-## Why did golang choose Square Brackets for generics though?😓
+## Why did golang had to choose Square Brackets for generics though?😓
 
 Java uses `< >` angle brackets for generics, golang could have followed the same, this whole thing with square brackets 
 might make the general appearance of the go program a little confusing and alien looking considering arrays also use 
