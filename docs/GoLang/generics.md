@@ -133,7 +133,7 @@ func (s *IntSet) Values() []int {
 Even though the logic of storing elements in a set is the same because of the unavailability of generics, we are 
 forced to write duplicate code one for int and one for string.
 
-# After Generics
+## After Generics
 
 ```go
 package main
