@@ -3,12 +3,12 @@
 The release 1.18 that came out on 15 Mar 2022 introduces the long awaited generics into GoLang and is one of the 
 most significant release in a long time.
 
-# Before Generics
+## Before Generics
 
 Let's take the example of constructing a Set Datastructure for type `int` and type `string`. The code will look something 
 like this in <= 1.17
 
-## Set of String
+## Set of string
 
 ```go
 package main
