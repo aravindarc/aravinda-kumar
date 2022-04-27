@@ -265,7 +265,7 @@ func (t *TestStruct[E]) TestMethod(ele E) {
 Golang is built on the principle of bringing the long-lost simplicity back to programming. Generics will help to write 
 better libraries and packages, ORMs, etc...
 
-But we will have to wait and see how standards and behaviours emerge in the community arund generics.
+But we will have to wait and see how standards and behaviours emerge in the community around generics.
 
 ## Why did golang had to choose Square Brackets for generics though?😓
 
