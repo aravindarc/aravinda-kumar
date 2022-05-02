@@ -7,6 +7,8 @@ with respect to K8S. In this AKS series, we'll be looking at different operation
 This first part will help you define a workflow for user access control to the api server as shown below. Example 
 Terraform code is available for all configurations.
 
+You can find the source code in this repository https://github.com/aravindarc/aks-access-control
+
 ![Access Control](./assets/AKS-access-control.png)
 
 ## Cluster creation
@@ -18,7 +20,7 @@ private cluster with proper network configurations.
 
 :::
 
-```hcl title="aks.tf"
+```hcl title="./aks.tf"
 resource "azurerm_kubernetes_cluster" "aks1" {
   name                = var.aks_name
   location            = azurerm_resource_group.aks-rg.location
@@ -50,14 +52,14 @@ resource "azurerm_role_assignment" "admin" {
 }
 ```
 
-```hcl title="resource-group.tf"
+```hcl title="./resource-group.tf"
 resource "azurerm_resource_group" "aks-rg" {
   name     = var.resource_group_name
   location = var.resource_group_location
 }
 ```
 
-```hcl title="variables.tf"
+```hcl title="./variables.tf"
 variable "resource_group_name" {
   description = "resource group name"
   type        = string
@@ -94,7 +96,7 @@ variable "aks_admin_group_object_ids" {
 }
 ```
 
-```hcl title="variables.tfvars"
+```hcl title="./variables.tfvars"
 resource_group_name         = "aks-resources"
 resource_group_location     = "Central India"
 aks_name                    = "aks1"
@@ -119,7 +121,7 @@ AKS cluster.
 
 Once the group is created we have to create a Role and RoleBinding with the subject as the AD group.
 
-```hcl title="group.tf"
+```hcl title="./group.tf"
 data "azuread_client_config" "current" {}
 
 resource "azuread_group" "groups" {
@@ -130,14 +132,14 @@ resource "azuread_group" "groups" {
 }
 ```
 
-```hcl title="variables.tf"
+```hcl title="./variables.tf"
 variable "ad_groups" {
   description = "ad groups to be used in aks rolebindings"
   type        = list(string)
 }
 ```
 
-```hcl title="variables.tfvars"
+```hcl title="./variables.tfvars"
 ad_groups                   = ["product1", "product2"]
 ```
 
