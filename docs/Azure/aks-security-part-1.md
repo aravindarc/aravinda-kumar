@@ -255,7 +255,7 @@ But when I try to access something from default namespace, I will be blocked.
 
 ```shell-session
 > kubectl get po -n default
-Error from server (Forbidden): pods is forbidden: User "a82dff55-652b-46f5-8904-171f5813f4d2" cannot list resource "pods" in API group "" in the namespace "default": User does not have access to the resource in Azure. Update role assignment to allow access.
+Error from server (Forbidden): pods is forbidden: User "00000000-0000-0000-0000-000000000000" cannot list resource "pods" in API group "" in the namespace "default": User does not have access to the resource in Azure. Update role assignment to allow access.
 ```
 
 ## Next Step
