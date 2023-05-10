@@ -103,7 +103,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['hcl', 'shell-session']
+        additionalLanguages: ['hcl', 'shell-session', "java"]
       },
     }),
 };
