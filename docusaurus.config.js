@@ -32,6 +32,10 @@ const config = {
           editUrl:
             'https://github.com/aravindarc/aravinda-kumar/tree/main/',
         },
+        gtag: {
+          trackingID: 'G-50GE9B0WZH',
+          anonymizeIP: true,
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
