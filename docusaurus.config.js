@@ -107,7 +107,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['hcl', 'shell-session', "java"]
+        additionalLanguages: ['hcl', 'shell-session', "java", 'toml']
       },
     }),
 };
