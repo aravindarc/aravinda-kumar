@@ -33,7 +33,7 @@ making it a proprietary license of Hashicorp that they can change at any time.
 ![BSL](./assets/catmeme.jpg)
 
 Now all the competitors of Hashicorp might be thinking of forking Terraform. A few days ago, a new open source fork of Terraform was created 
-by [digger.dev](digger.dev) called OpenTerraform, but it was taken down in a day for unknown reasons.
+by [digger.dev](https://digger.dev) called _OpenTerraform_, but it was taken down in a day for unknown reasons.
 
 The problem with forking Terraform is not Terraform but the providers. Terraform has a lot of providers that are built by the community and 
 more importantly by the cloud providers themselves. 
