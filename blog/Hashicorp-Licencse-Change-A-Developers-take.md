@@ -16,6 +16,14 @@ Hashimoto himself has said that Terraform was inspired by AWS Cloud Formation [h
 He says 
 > "In 2011, AWS introduced CloudFormation ... But what I thought we really needed was an open source, cloud-agnostic solution ..."
 
+
+In 2017 terraform became the most popular IaC tool. And from there on, Hashicorp has been building a lot of products around Terraform and more importantly
+on their language HCL. They are valued at 5 billion dollars now. Then why did they change the license of Terraform? The obvious and only answer is to 
+stamp out competition to their Hashicorp Cloud Platform (HCP).
+
+Terraform says 95% of the commits come from their staff. But still a tool that is entirely built using golang libraries that are open source, is now not open source. So we still 
+feel bad about it. Hashicorp could have considered focusing more on marketing their HCP instead of changing the license of Terraform.
+
 ## What is the new license?
 
 On 11th August 2023, Hashicorp announced that they are changing the license of Terraform from Mozilla Public License (MPL) to Business Source License.
