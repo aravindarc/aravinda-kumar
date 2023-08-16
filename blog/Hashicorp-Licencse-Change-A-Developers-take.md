@@ -75,6 +75,9 @@ And I am glad that they didn't call it *"mein terraform"*.
 
 **As a competitor:** Wait and watch, the only way for you is to wait for a change from Hashicorp. If they don't change, you can't do anything.
 
-**As a developer:** I think HCL is a cool language with a parser and backend written in Go. But the design of the language has 
+**As a devops engineer:** I think terraform is a great tool and it is still free to use for me and my company. So I will continue to use it. 
+But I will also keep an eye on the competitors and their offerings. And will prepare my management for a change if needed.
+
+**As a golang developer:** I think HCL is a cool language with a parser and backend written in Go. But the design of the language has
 not evolved much in the direction of a pure platform engineering defacto. Mainly because of Hashicorp's aversion to competitors profiting.
 So I do think forking HCL (along with terraform) and creating a new language that is more exciting and pledged to be open source is the right thing to do.
