@@ -42,7 +42,17 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+          id: 'tamil',
+          path: 'tamil',
+          routeBasePath: 'tamil',
+          sidebarPath: require.resolve('./sidebars.js')["tamilSidebar"],
+      }
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -60,6 +70,7 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: "/tamil/செந்தித்துறை", label: 'தமிழ்', position: 'left'},
           {
             href: 'https://github.com/aravindarc',
             label: 'GitHub',
