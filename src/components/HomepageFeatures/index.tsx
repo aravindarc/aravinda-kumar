@@ -154,7 +154,8 @@ function Feature({id, title, description, getFeaturesRef, imgPath}: FeatureItem)
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (parentRef.current.getBoundingClientRect().top < 0) {
+
+      if (parentRef?.current?.getBoundingClientRect()?.top < 0) {
         ref.current.style.position = "fixed";
       } else {
         ref.current.style.position = "static";
