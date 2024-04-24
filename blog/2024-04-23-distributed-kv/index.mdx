@@ -1,4 +1,4 @@
-import KvState from "./KvState";
+import {KvState, DemoType} from "./KvState";
 
 # Distributed Key-Value Store
 
@@ -92,6 +92,9 @@ Raft ensures that all nodes in the system see the same data at the same time, ev
 
 ## Live Demo - Scenario 1: Replication of Data
 
-<KvState/>
+<KvState demoType={DemoType.Replication}/>
 
+## Live Demo - Scenario 2: Scaling the System
+
+<KvState demoType={DemoType.Scaling}/>
 
